@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_50"
+        android:background="@color/mainbg"
+        android:drawableLeft="@drawable/icon_names2"
+        android:drawablePadding="@dimen/space_10"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/space_5"
+        android:text="@string/app_name"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size_16"
+        android:textStyle="bold" />
+
+
+    <TextView
+        android:id="@+id/tv_copy_pwd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/selector_bg"
+        android:clickable="true"
+        android:gravity="center"
+        android:padding="@dimen/space_15"
+        android:text="@string/copy_pwd"
+        android:textSize="@dimen/text_size_16" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_0_5"
+        android:background="@color/text_eee" />
+
+    <TextView
+        android:id="@+id/tv_copy_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/selector_bg"
+        android:clickable="true"
+        android:gravity="center"
+        android:padding="@dimen/space_15"
+        android:text="@string/copy_name"
+        android:textSize="@dimen/text_size_16" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_0_5"
+        android:background="@color/text_eee" />
+
+    <TextView
+        android:id="@+id/tv_share_frd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/selector_bg"
+        android:clickable="true"
+        android:gravity="center"
+        android:padding="@dimen/space_15"
+        android:text="@string/share_frd"
+        android:textSize="@dimen/text_size_16" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_0_5"
+        android:background="@color/text_eee" />
+
+    <TextView
+        android:id="@+id/tv_del_wifi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/selector_bg"
+        android:clickable="true"
+        android:gravity="center"
+        android:padding="@dimen/space_15"
+        android:text="@string/del_wifi"
+        android:textSize="@dimen/text_size_16"
+        android:visibility="gone" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_0_5"
+        android:background="@color/text_eee"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/tv_cancel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/selector_bg2"
+        android:clickable="true"
+        android:gravity="center"
+        android:padding="@dimen/space_15"
+        android:text="@string/cancel"
+        android:textSize="@dimen/text_size_16" />
+
+</LinearLayout>

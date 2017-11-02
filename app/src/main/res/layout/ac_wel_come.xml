@@ -1,0 +1,89 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <include layout="@layout/include_welcome_one" />
+
+
+    <RelativeLayout
+        android:id="@+id/rl_gdt_ads"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <!-- 广点通开屏广告支持“半屏/全屏”展示，开发者可以把Logo区域放在屏幕底部，然后在Logo上方提供一个容器来放置半开屏广告，请注意此容器高度不得小于400dp -->
+
+
+        <!-- 2.开屏广告容器区域：-->
+        <!-- 注意：该区域高度不得小于400dp。在本示例中没有写死splash_container的高度值，是因为第1部分的app_logo区域是一个高度很小的图片。 -->
+        <FrameLayout
+            android:id="@+id/fl_gdt_ads"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+
+        <!-- 4.预设开屏图片区域： -->
+        <!-- 开发者可以把自家App设计开屏图片摆放在这里，本示例中放置了一张静态图片。然后在onADPresent回调中再把这个图片隐藏起来。 !-->
+        <!-- 注意：直接将此图盖在广告容器的上面即可，始终不要将广告容器splash_container的设为invisible，否则将不会展示广告无法计费，返回错误码600。-->
+        <ImageView
+            android:id="@+id/iv_gdt_logo"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerInside"
+            android:src="@drawable/icon_bg_loading2" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingTop="@dimen/space_30">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@mipmap/ic_launcher" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/space_10">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/app_name"
+                android:textColor="@color/mainbg"
+                android:textSize="@dimen/text_size_22"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/slogen"
+                android:textColor="@color/text_666"
+                android:textSize="@dimen/text_size_15" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingBottom="@dimen/space_20"
+        android:paddingTop="@dimen/space_10"
+        android:text="@string/copyright"
+        android:textColor="@color/text_666"
+        android:textSize="@dimen/text_size_15" />
+</LinearLayout>

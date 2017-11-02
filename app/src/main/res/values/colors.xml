@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="mainbg">#4bc4f0</color>
+    <!--custom toast 背景-->
+    <color name="title_view_bg">#4bc4f0</color>
+    <color name="main_bg_select" >#20a4d4</color>
+
+    <color name="txt">#808080</color>
+    <color name="bg">#fafafa</color>
+
+    <color name="bg3">#f6f6f6</color>
+    <color name="gray2">#898686</color>
+    <color name="gray3">#e9e8e8</color>
+    <color name="yellow3">#fec52c</color>
+    <color name="yellow2">#ffa726</color>
+    <color name="main_bg5">#36bfbcbc</color>
+
+    <color name="oranges">#ff7101</color>
+    <color name="pink">#b540ff</color>
+
+
+</resources>

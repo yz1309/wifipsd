@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:toggle="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_50"
+        android:background="@color/mainbg"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/space_5"
+        android:paddingRight="@dimen/space_5">
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="@string/app_name"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_16"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+
+        <RelativeLayout
+            android:id="@+id/rl_help"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/space_10"
+            android:paddingRight="@dimen/space_10">
+
+            <ImageView
+                android:id="@+id/iv_help"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_help_outline_white_24dp" />
+
+            <ImageView
+                android:id="@+id/iv_help_new"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/iv_help"
+                android:src="@mipmap/news" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_set"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/space_10"
+            android:paddingRight="@dimen/space_10">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_account_circle_white_24dp" />
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_view_pwd"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/space_10"
+            android:paddingRight="@dimen/space_10">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_brightness_7_white_24dp" />
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/mainbg"
+        android:gravity="center"
+        android:orientation="vertical">
+
+
+        <com.zcw.togglebutton.ToggleButton
+            android:id="@+id/switch_btn"
+            android:layout_width="@dimen/space_50"
+            android:layout_height="@dimen/space_25"
+            android:layout_gravity="right"
+            android:layout_marginRight="@dimen/space_10"
+            android:layout_marginTop="@dimen/space_10"
+            toggle:tbBorderWidth="1dp"
+            toggle:tbOffBorderColor="@color/main_bg_select"
+            toggle:tbOffColor="@color/main_bg_select"
+            toggle:tbOnColor="@color/oranges"
+            toggle:tbSpotColor="@color/white"></com.zcw.togglebutton.ToggleButton>
+
+
+        <LinearLayout
+            android:paddingBottom="@dimen/space_10"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ProgressBar
+                android:visibility="gone"
+                android:id="@+id/pb_gress"
+                style="?android:attr/progressBarStyle"
+                android:layout_width="@dimen/space_30"
+                android:layout_height="@dimen/space_30" />
+
+            <TextView
+                android:gravity="center_vertical"
+                android:id="@+id/tv_cur_wifi"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="@string/not_wifi_connect"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_18"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+    </LinearLayout>
+    <!--没有打开wifi的情况-->
+    <LinearLayout
+        android:id="@+id/ll_not_open_wifi"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/wifi_disabled" />
+
+        <TextView
+            android:id="@+id/tv_open_wifi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space_15"
+            android:background="@drawable/shape_selector_r5_p7_15_mainbg"
+            android:clickable="true"
+            android:paddingBottom="@dimen/space_10"
+            android:paddingTop="@dimen/space_10"
+            android:text="@string/open_wifi"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_wifi"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <android.support.v4.widget.SwipeRefreshLayout
+            android:id="@+id/swipe_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ListView
+                android:id="@+id/listview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                android:divider="@color/gray3"
+                android:dividerHeight="@dimen/space_0_5"></ListView>
+        </android.support.v4.widget.SwipeRefreshLayout>
+
+
+    </LinearLayout>
+</LinearLayout>

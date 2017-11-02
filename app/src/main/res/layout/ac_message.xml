@@ -1,0 +1,60 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipToPadding="true"
+    android:padding="@dimen/space_10"
+    android:background="@color/main_bg5"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <!--<include layout="@layout/top_layout" />-->
+
+    <ScrollView
+        android:paddingTop="@dimen/space_20"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:paddingLeft="@dimen/space_30"
+            android:layout_margin="@dimen/space_20"
+            android:background="@drawable/icon_bg_arrow"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:paddingBottom="@dimen/space_10"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:text="@string/messages"
+                android:textColor="@color/mainbg"
+                android:textSize="@dimen/text_size_20" />
+
+            <TextView
+                android:gravity="center"
+                android:id="@+id/tv_content"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/loading"
+                android:textSize="@dimen/text_size_18" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <TextView
+        android:clickable="true"
+        android:id="@+id/tv_close"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_40"
+        android:layout_margin="@dimen/space_20"
+        android:background="@drawable/shape_selector_r5_p7_15_mainbg"
+        android:gravity="center"
+        android:text="@string/knows"
+        android:textColor="@color/white" />
+</LinearLayout>

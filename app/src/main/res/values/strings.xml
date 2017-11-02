@@ -1,0 +1,178 @@
+<resources>
+    <string name="app_name">WiFi密码助理</string>
+    <string name="slogen">专业的WiFi密码助理</string>
+    <string name="copyright">©2016 www.slan.tech Lnc</string>
+
+
+    <string name="set">基本设置</string>
+    <string name="about_me">我是石兰</string>
+    <string name="feedback">意见反馈</string>
+    <string name="invit_frd">邀请好友</string>
+    <string name="apps">探索世界</string>
+    <string name="file_path">路径</string>
+    <string name="market_score">帮我打怪</string>
+    <string name="wel_come">封面故事</string>
+    <string name="go_market_score">帮我打怪</string>
+    <string name="not_set_up_market">你手机中没有安装应用市场</string>
+
+    <string name="ver_update">当前版本</string>
+    <string name="version">V1.3</string>
+    <string name="qqqun">QQ交流群</string>
+    <string name="qqqun2">官方</string>
+    <string name="email">联系邮箱</string>
+    <string name="weibo">新浪微博</string>
+    <string name="net">官方网站</string>
+
+    <string name="txt_copy">帐号已复制</string>
+    <string name="sub_feedback">一万点的感谢，我们会认真考虑您的建议，如有采纳，我们也只好送上隔空的思念啦~哈哈</string>
+    <string name="qq_mes">想快速解决问题请直接联系客服MM</string>
+    <string name="contact_mes">QQ、邮箱等(选填)</string>
+    <string name="thanks">谢谢您的帮助</string>
+    <string name="device">设备信息</string>
+    <string name="add_shortcut_suc">已添加快捷方式</string>
+    <string name="down_suc">下载成功</string>
+    <string name="down_failed">下载失败</string>
+    <string name="input_comment_require">奏折不能是空白的</string>
+    <string name="desc1">我发现了一个很有意思的手机App@</string>
+    <string name="share_before">【来自</string>
+    <string name="share_behind">分享】</string>
+    <string name="desc2">主要用于查看,分享已经连接成功的WiFi名称和密码</string>
+
+    <string name="no_net">木有网络，臣妾做不到啊</string>
+    <string name="no_net2">网络不给力,请检查网络设置</string>
+    <string name="no_data">没有数据</string>
+    <string name="no_data_val">下拉重新加载</string>
+    <string name="new_version">新版本已准备好</string>
+    <string name="click_join">单击加入</string>
+    <string name="knows">我知道了</string>
+    <string name="copy_suc">复制成功</string>
+    <string name="messages">消息提示</string>
+    <string name="cancel">取消</string>
+    <string name="loading">加载中</string>
+    <string name="copy">点击复制</string>
+    <string name="btn_cancel">下次再说</string>
+    <string name="btn_ok">立即更新</string>
+    <string name="cur_version_is_best">当前版本已是最新</string>
+    <string name="apk">安装包</string>
+
+
+    <string name="root">本软件需要Root权限方可使用,并给应用授予Root权限！</string>
+    <string name="root2">若您拒绝了Root授权，请打开权限管理软件允许授权或者卸载重装</string>
+    <string name="copy_pwd">复制密码</string>
+    <string name="copy_name">复制名称</string>
+    <string name="share_frd">分享好友</string>
+    <string name="del_wifi">删除热点</string>
+    <string name="pwd_is_copy">密码已复制</string>
+    <string name="wifi_is_copy">热点已复制</string>
+    <string name="back_up_file">备份文件</string>
+    <string name="back_up">备份</string>
+    <string name="recover">恢复</string>
+    <string name="share_wifi">WiFi</string>
+    <string name="back_up_suc">温馨提示：备份成功</string>
+    <string name="recover_is_null">温馨提示：无恢复文件</string>
+    <string name="file_is_exist">温馨提示：文件不存在</string>
+    <string name="recover_suc">温馨提示：文件恢复成功</string>
+    <string name="not_wifi_to_share">温馨提示：没有可分享的WiFi</string>
+    <string name="del">删除</string>
+    <string name="del_suc">删除成功</string>
+    <string name="del_all">清空所有</string>
+    <string name="mes">温馨提示</string>
+    <string name="confirm_del">确认清空所有备份文件？</string>
+    <string name="ok">确定</string>
+    <string name="del_all_suc">清空成功</string>
+    <string name="root_failed">手机暂未Root</string>
+
+    <string name="kingroot">获取Root权限(KingRoot)</string>
+    <string name="baiduroot">获取Root权限(百度一键Root)</string>
+    <string name="root_jingling">获取Root权限(Root精灵)</string>
+    <string name="root_dashi">获取Root权限(Root大师)</string>
+    <string name="yijian_root">获取Root权限(一键Root工具)</string>
+    <string name="root_360">获取Root权限(360超级Root)</string>
+    <string name="help">常见问题</string>
+    <string name="getroot">获取Root权限</string>
+    <string name="what_is_root">什么是Root</string>
+    <string name="what_is_root_detial">Root：即为获取最高的权限，就跟电脑获取超级管理员一样的!因为厂家怕你不懂手机系统就设置了这样一个权限。你的手机没Root之前，你是以一个使用者的身份在用这个手机。你只能被动的使用里面的一些功能，或者在不影响系统全局的情况下安装一些新的程序。
+而Root之后呢?你就变成了一个开发者的身份。就是说你可以深入的编辑这部手机了。手机的系统你可以更改。手机的内存你可以自主分配。原来自带的软件你也可以删除卸载。甚至说如今安卓系统的刷机说简单点你的手机Root了之后你就可以深入的弄手机系统了!</string>
+    <string name="root_huaichu1">1、如果说你只是简单的使用安卓手机，因为这一部分人基本上用不到Root 之后的任何功能。Root 过之后，反而容易感染病毒，没Root
+    的手机虽然也容易感染病毒，但是它破坏不了你的系统。</string>
+    <string name="root_huaichu2">2、如果你对刷机不了解，就不要进行Root。因为目前用安卓系统这么久。发现Root唯一的好处不过就是刷个新的基带或者系统。尝尝鲜、就这样。刷机本身是有风险的，对刷机不了解还盲目Root了乱刷把手机变砖了哭都没地方去。</string>
+    <string name="root_huaichu3">3、最后一点，必须得相当注意!因为你的手机如果Root了，厂家就不再保修了。因为你已经对自己手机的根本系统擅自做了更改、所以，当你Root成功那一瞬间。手机就真正完全是你的了。</string>
+    <string name="root_wenti">Root之后可能存在的问题</string>
+    <string name="how_root">其他设备获取Root权限</string>
+    <string name="xiaomi">小米设备</string>
+    <string name="xiaomi_root1">1、在MIUI官网下载最新开版ROM，地址为：</string>
+    <string name="xiaomi_root_down_url">http://www.miui.com/download.html</string>
+    <string name="xiaomi_root2">2、下载符合您手机型号的最新开发版完整包</string>
+    <string name="xiaomi_root3">3、把您的小米手机与电脑连接，把刚下载的开发版完整包复制到手机的（downloaded_rom）目录中</string>
+    <string name="xiaomi_root4">4、在小米手机上找到【系统更新】，点小米手机左边的功能键，然后选择选择安装包</string>
+    <string name="xiaomi_root5">5、在你的手机downloaded_rom目录中找到刚才复制进手机的开发版完整包文件</string>
+    <string name="xiaomi_root6">6、然后点立即更新或者开始更新，系统会开始自动更新，然后重启</string>
+    <string name="xiaomi_root7">7、更新完系统会重启手机，然后在小米手机上找到【安全中心】，然后找到【授权管理】，注意：如果你的手机没有【安全中心】，就直接找到【授权管理】</string>
+    <string name="xiaomi_root8">8、打开允许应用获得Root权限就大功告成了</string>
+    <string name="meizu">魅族设备</string>
+    <string name="meizu_root1">1、首先打开【设置】->【账户】菜单</string>
+    <string name="meizu_root2">2、接着点击【更多】按钮进入并点击【获取权限】点击获取权限后手机会自动重启，Root权限就已经获取成功了</string>
+    <string name="meizu_root3">1、首先打开【设置】->【账户】菜单->【我的Flyme】->【账户中心】->【单击当前Flyme账户】</string>
+    <string name="meizu_root4">2、接着打开【个人中心】->【打开系统权限】Root权限就已经获取成功了</string>
+    <string name="or">或者</string>
+    <string name="other_equip">其他设备</string>
+    <string name="other_equip_root3">单击下面链接来获取Root权限，如果Root失败，请尝试通过电脑版Root工具，成功率更高</string>
+    <string name="root_notuse1">1、重启手机，再次打开【WiFi密码助理】，注意：小米设备需在【安全中心】->【授权管理】中已经打开Root权限</string>
+    <string name="root_notuse2">2、重启之后，还是不行，说明您的手机未彻底获得Root权限，请重新尝试</string>
+    <string name="root_notuse">设备已成功获取Root权限，还是不能用？</string>
+    <string name="root_now_notuse">之前可以用，现在不能用了？</string>
+    <string name="root_now_notuse1">1、系统升级导致</string>
+    <string name="root_now_notuse1_detail">请重新下载Root工具进行Root操作</string>
+    <string name="root_now_notuse2">2、恢复出厂设置导致</string>
+    <string name="function">软件有什么功能？</string>
+    <string name="function1">本应用主要用于查看已经连接成功的WiFi名称和密码，并非破解WiFi密码应用，破解密码应用请下载【WiFi万能钥匙】</string>
+    <string name="wifi_pwd">破解密码(WiFi万能钥匙)</string>
+    <string name="search_wifi">为什么搜索不到周边网络？</string>
+    <string name="search_wifi1">由于本应用并非破解周边WiFi密码应用，本应用主要用于查看已经连接成功的WiFi名称和密码，破解密码应用请下载【WiFi万能钥匙】</string>
+    <string name="wifi_connect">为什么查出来的密码连不上？</string>
+    <string name="wifi_connect1">由于本应用并非破解周边WiFi密码应用，本应用主要用于查看已经连接成功的WiFi名称和密码，所以密码的正确性我们无法保证</string>
+    <string name="reason">可能导致的原因</string>
+    <string name="reason1">1、密码已经被修改</string>
+    <string name="reason2">2、路由器设置了Mac地址绑定</string>
+    <string name="reason3">3、该WiFi没有网络，停机，欠费</string>
+    <string name="reason4">4、信号干扰，周边存在多个同名的WiFi造成</string>
+    <string name="connect">或者直接联系客服QQ</string>
+    <string name="ques">本应用主要用于查看,分享已经连接成功的WiFi名称和密码,前提是手机要Root并获取Root权限，并非破解WiFi密码应用，不支持搜索周边网络</string>
+    <string name="view_pwd">查看密码</string>
+
+
+    <string name="btn_sub">提交</string>
+    <string name="search">search....</string>
+    <string name="add">添加</string>
+    <string name="open">打开</string>
+    <string name="open_wifi">打开WiFi,发现热点</string>
+    <string name="not_wifi_connect">暂未连接WiFi</string>
+    <string name="has_wifi_connect">已连接</string>
+    <string name="connecting">正在连接</string>
+    <string name="connect_failed">连接失败</string>
+    <string name="connect2">开始连接</string>
+    <string name="connect_suc">连接成功</string>
+    <string name="pwd_is_wrong">输入密码错误</string>
+    <string name="xiaomi_user">亲爱的小米用户,下面介绍Root方法：</string>
+    <string name="priority">优先级</string>
+    <string name="no_data_wifi">没有WiFi数据</string>
+    <string name="how_root_xiaomi">小米设备获取Root权限</string>
+    <string name="how_root_meizu">魅族设备获取Root权限</string>
+    <string name="save">保存</string>
+    <string name="sub">提交</string>
+
+
+
+    <string name="ads">广告</string>
+    <string name="jump_ads">跳过广告</string>
+    <string name="jump_ads2">点击跳过</string>
+    <string name="tuiguang">推广</string>
+    <string name="tuijian">精彩推荐</string>
+    <string name="go_video">精彩视频</string>
+    <string name="video_is_loading">视频正在加载中..</string>
+    <string name="ads_click">感觉还不错，点一下小广告支持我们呢</string>
+    <string name="shang">赏</string>
+
+    <string name="save_pic">保存图片</string>
+
+</resources>

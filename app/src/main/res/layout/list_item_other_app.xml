@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:padding="@dimen/space_10">
+
+
+    <ImageView
+        android:id="@+id/iv_pic"
+        android:layout_width="@dimen/space_50"
+        android:layout_height="@dimen/space_50"
+        android:src="@mipmap/ic_launcher" />
+
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/space_10">
+
+        <TextView
+            android:textColor="@color/black"
+            android:id="@+id/tv_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/space_7"
+            android:text="@string/loading"
+            android:textSize="@dimen/text_size_18" />
+
+        <TextView
+            android:textColor="@color/gray2"
+            android:id="@+id/tv_slogen"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/loading"
+            android:textSize="@dimen/text_size_14" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_oper"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_selector_r5_white_mainbg"
+        android:paddingBottom="@dimen/space_5"
+        android:paddingLeft="@dimen/space_10"
+        android:paddingRight="@dimen/space_10"
+        android:paddingTop="@dimen/space_5"
+        android:text="@string/add"
+        android:textColor="@color/mainbg"
+        android:textSize="@dimen/space_14" />
+
+</LinearLayout>

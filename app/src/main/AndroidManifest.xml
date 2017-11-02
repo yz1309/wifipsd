@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="top.slantech.wifipsd">
+
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:resizeable="true"
+        android:smallScreens="true" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
+    <!--添加快捷方式start-->
+    <!-- 添加快捷方式 -->
+    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT" />
+    <!-- 移除快捷方式 -->
+    <!--<uses-permission android:name="com.android.launcher.permission.UNINSTALL_SHORTCUT" />-->
+    <!-- 查询快捷方式 -->
+    <!--    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS" />
+        <uses-permission android:name="com.android.launcher2.permission.READ_SETTINGS"/>
+        <uses-permission android:name="com.android.launcher3.permission.READ_SETTINGS"/>-->
+    <!--添加快捷方式end-->
+
+
+    <!-- voices ads start -->
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_UPDATES" />
+    <!-- voices ads end -->
+
+
+    <!-- adbana ads start -->
+    <uses-permission android:name="android.permission.DOWNLOAD_WITHOUT_NOTIFICATION" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+
+    <!-- adbana ads end -->
+
+    <application
+        android:name=".MyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <!-- voices ads start -->
+        <meta-data
+            android:name="IFLYTEK_APPKEY_AD"
+            android:value="5872fbe7" />
+        <!-- voices ads end -->
+
+
+        <!-- adbana ads start -->
+        <meta-data
+            android:name="com.google.android.gms.version"
+            class="kix-line-break"
+            android:value="@integer/google_play_services_version" />
+
+        <activity android:name="com.awesome.android.sdk.activity.AwBrowserActivity" />
+
+        <service android:name="com.awesome.android.sdk.service.AwClothEventService" />
+        <!-- admob -->
+
+        <activity
+            android:name="com.google.android.gms.ads.AdActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+            android:theme="@android:style/Theme.Translucent" />
+        <!-- gdt -->
+
+        <service
+            android:name="com.qq.e.comm.DownloadService"
+            android:exported="false" />
+
+        <activity
+            android:name="com.qq.e.ads.ADActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize" />
+        <!-- 讯飞 广告 -->
+        <service android:name="com.iflytek.voiceads.update.DownloadService" />
+
+        <activity
+            android:name="com.iflytek.voiceads.request.IFLYBrowser"
+            android:screenOrientation="portrait" />
+
+
+        <!-- adbana ads end -->
+
+        <!-- getui start -->
+        <!--
+                    <receiver
+                    android:name=".receivers.GeTuiPushReceiver"
+                    android:exported="false">
+                    <intent-filter>
+                        <action android:name="com.igexin.sdk.action.QuTBv4AelbA2Ygu0pnROxA" />
+                    </intent-filter>
+                </receiver>
+        -->
+
+
+        <!-- 配置SDK核心服务 -->
+        <!-- 用户自定义服务继承自GTIntentService,作为SDK与APP桥梁服务,用来接收各种消息和命令回复 -->
+        <service android:name=".services.DemoIntentService" />
+        <!-- 配置SDK核心服务 -->
+        <service
+            android:name=".services.DemoPushService"
+            android:exported="true"
+            android:label="PushService"
+            android:process=":pushservice" />
+        <!-- getui end -->
+
+        <!-- umeng fenxi start -->
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="582288b7677baa3c140034b7"></meta-data>
+
+        <!-- umeng fenxi end -->
+
+
+        <activity
+            android:name=".WelComeActivity2"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.activity.ViewPwdActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+        <activity
+            android:name=".ui.activity.SetActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.AboutMeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.FeedBackActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.OtherAppsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.HelpActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.MainActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".ui.activity.MessageActivity"
+            android:screenOrientation="portrait"></activity>
+
+        <service
+            android:name=".services.DownService"
+            android:enabled="true" />
+        <activity
+            android:name=".WelComeActivity3"
+            android:screenOrientation="portrait" />
+    </application>
+
+</manifest>

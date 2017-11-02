@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <TextView
+        android:id="@+id/tv_root_jingling"
+        style="@style/btnstyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:text="@string/root_jingling" />
+
+    <TextView
+        android:id="@+id/tv_root_dashi"
+        style="@style/btnstyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:text="@string/root_dashi" />
+    <TextView
+        android:id="@+id/tv_kingroot"
+        style="@style/btnstyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:text="@string/kingroot" />
+
+    <TextView
+        android:id="@+id/tv_root_baidu"
+        style="@style/btnstyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:text="@string/baiduroot" />
+
+
+
+    <TextView
+        android:id="@+id/tv_yijian_root"
+        style="@style/btnstyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:text="@string/yijian_root" />
+
+    <TextView
+        android:id="@+id/tv_360_root"
+        style="@style/btnstyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:text="@string/root_360" />
+</LinearLayout>
